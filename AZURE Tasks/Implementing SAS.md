@@ -24,9 +24,11 @@
   ![](Assets/Screenshot%20from%202023-01-21%2021-27-31.png)
 
 * Then go to overview tab in storage account.
+
   ![](Assets/Screenshot%20from%202023-01-21%2021-28-13.png)
 
 * Now add the given bash script code in a script file in both of the VMs.
+
   ![](Assets/Screenshot%20from%202023-01-21%2021-28-46.png)
 
 * Give execute permissions.
@@ -42,7 +44,9 @@
   ```
 
 * Now access the connected file share in **/mnt** folder.
+
   ![](Assets/Screenshot%20from%202023-01-21%2021-32-40.png)
 
 * Check if the added/shared files between VMs reflect on the Azure portal or not.
+
   ![](Assets/Screenshot%20from%202023-01-21%2021-35-12.png)
