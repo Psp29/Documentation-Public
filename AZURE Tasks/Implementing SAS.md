@@ -47,6 +47,12 @@
 
   ![](Assets/Screenshot%20from%202023-01-21%2021-32-40.png)
 
+  ![](Assets/Screenshot%20from%202023-01-21%2021-33-33.png)
+
+  ![](Assets/Screenshot%20from%202023-01-21%2021-34-04.png)
+
+  ![](Assets/Screenshot%20from%202023-01-21%2021-34-49.png)
+
 * Check if the added/shared files between VMs reflect on the Azure portal or not.
 
   ![](Assets/Screenshot%20from%202023-01-21%2021-35-12.png)
