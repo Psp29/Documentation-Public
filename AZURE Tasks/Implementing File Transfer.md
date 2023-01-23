@@ -3,7 +3,7 @@
 ## Requirements:
 
 - Azure Account.
-- Virtual Network with two subnets- Private Subnet and Puvlic Subnet.
+- Virtual Network with two subnets- Private Subnet and Public Subnet.
 - One Jump server (In public subnet with Public IP).
 - Two VMs connected to a private subnet (Without any Public IP).
 - Azure Storage Account.
