@@ -1,1 +1,1 @@
-This is the public version of Documentation repo. Test.
+This is the public version of Documentation repo.
