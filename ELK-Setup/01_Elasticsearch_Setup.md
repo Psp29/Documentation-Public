@@ -40,7 +40,7 @@
   add following parameters. **\*Only for master node**
 
   ![](__assets__/Screenshot%20from%202023-03-11%2015-17-12.png)
-  ![](__assets__/Screenshot%20from%202023-03-11%2015-17-30.png)
+  ![](__assets__/Screenshot%20from%202023-03-11%2015-17-35.png)
 
 - Enable following ports of Master node machine: 9200, 9300 and 5601.
 
