@@ -39,8 +39,8 @@
 - Now edit the configuration file located at `/etc/elasticsearch/elasticsearch.yml` (\*note: different OS and linux distributions may have different configuration paths.)
   add following parameters. **\*Only for master node**
 
-      ![](__assets__/Screenshot%20from%202023-03-11%2015-17-12.png)
-      ![](__assets__/Screenshot%20from%202023-03-11%2015-17-35.png)
+  ![](__assets__/Screenshot%20from%202023-03-11%2015-17-12.png)
+  ![](__assets__/Screenshot%20from%202023-03-11%2015-17-30.png)
 
 - Enable following ports of Master node machine: 9200, 9300 and 5601.
 
