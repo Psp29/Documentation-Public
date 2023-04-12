@@ -27,11 +27,12 @@
   ![](__assets__/Screenshot%20from%202023-04-11%2012-02-01.png)
 - Select trusted entity as **AWS Service** -> Under Use case select **EC2** -> Next.
   ![](__assets__/Screenshot%20from%202023-04-11%2012-02-32.png)
-- On next tab filter and select following 3 Permission Policies then click Next.
+- On next tab filter and select following 4 Permission Policies then click Next.
 
   - AmazonEKSWorkerNodePolicy
   - AmazonEC2ContainerRegistryReadOnly
   - AmazonEBSCSIDriverPolicy
+  - AmazonEKS_CNI_Policy
 
   ![](__assets__/Screenshot%20from%202023-04-11%2012-06-31.png)
 
