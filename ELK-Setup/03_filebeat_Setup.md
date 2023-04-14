@@ -36,7 +36,7 @@
   sudo filebeat keystore add ES_PWD
   #add your elasticuser password when prompted.
 
-  sudo ES_CA
+  sudo filebeat keystore add ES_CA
   #add CA fingerprint that saved before when prompted.
   ```
 
