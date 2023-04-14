@@ -50,7 +50,7 @@
 
   ```bash
   cd /etc/nginx/sites-enabled
-  sudo unlink default.conf
+  sudo unlink default
   ll
   ```
 
