@@ -107,3 +107,29 @@
   ![](__assets__/Screenshot%20from%202023-03-11%2015-54-35.png)
 
 - We have successfully created an elasticsearch cluster with master and data node.
+
+## If We want to add another **master-eligible** node to create a multi-master stack then follow below steps.
+
+- Consider using same SSL cert for transport. We can generate said certificate by following [offical doc](https://www.elastic.co/guide/en/elasticsearch/reference/8.6/security-basic-setup.html#encrypt-internode-communication).
+- Basically setup is same except for 1-2 added steps.
+- Generate cert using utility provided by elastic. \*Note: You have to execute following command in master-1 node (and only once, since we will be using this one generated cert everywhere.)
+  ```bash
+  ./bin/elasticsearch-certutil ca
+  ```
+- And after generating CA we have to generate a certificate and private key for each (considering that you have installed elasticsearch on master-2 and haven't configured it yet!) of the nodes in your cluster (including master-1). You include the elastic-stack-ca.p12 output file that you generated in the previous step.
+  ```bash
+  ./bin/elasticsearch-certutil cert --ca elastic-stack-ca.p12
+  ```
+- After generating cert (p12 file) consider adding them to a easy-to-remember location (used "/etc/elasticsearch" here).
+
+- Its time to add them into configurations with other changes.
+
+- Master-1 configuration (/etc/elasicsearch/elasicsearch.yml).
+  ![](__assets__/Screenshot%20from%202023-05-28%2020-31-57.png)
+  ![](__assets__/Screenshot%20from%202023-05-28%2020-32-16.png)
+
+- For Master-2 (Donot forget to add same cluster name).
+  ![](__assets__/Screenshot%20from%202023-05-28%2020-44-28.png)
+  ![](__assets__/Screenshot%20from%202023-05-28%2020-44-52.png)
+
+- And then restart msater-1 node and master-2 node.
