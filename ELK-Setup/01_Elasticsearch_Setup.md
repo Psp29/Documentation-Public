@@ -116,7 +116,7 @@
   ```bash
   ./bin/elasticsearch-certutil ca
   ```
-- And after generating CA we have to generate a certificate and private key for each (considering that you have installed elasticsearch on master-2 and haven't configured it yet!) of the nodes in your cluster (including master-1). You include the elastic-stack-ca.p12 output file that you generated in the previous step.
+- And after generating CA we have to generate a certificate and private key (considering that you have installed elasticsearch on master-2 and haven't configured it yet!) in master-1 node in your cluster. You include the elastic-stack-ca.p12 output file that you generated in the previous step. And then you can use generated certificates file in all of your nodes in transport layer SSL settings.
   ```bash
   ./bin/elasticsearch-certutil cert --ca elastic-stack-ca.p12
   ```
