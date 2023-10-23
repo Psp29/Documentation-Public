@@ -28,7 +28,7 @@
     ![](__assets__/31.png)
 
 - Add following lines after the ***"type":"fluentbit"*** in *log_router* block. (One more easier way to identify is look for **"name":"log_router"**)
-    **Note***: Create a S3 bucket to store flentbit config file and put that information in place of <flunet-bit-config-bucket-name> and <service-name> here 
+    **Note***: Create a S3 bucket to store fluentbit config file and put that information in place of <flunet-bit-config-bucket-name> and <service-name> here 
 
     ```json
     ,
@@ -98,4 +98,4 @@
 - This step will be exactly similar as it was in the [Grafana](01_Deploying_Grafana.md#modify-alb-rules), only change is the Host Header parameter which will be DNS of application and **NOT** of Grafana. Also this is not necessary for fluentbit but it is important if application is hosted.
 
 ## Output:
-![](__assets__/36.png)
+![](__assets__/36.png)  
