@@ -8,6 +8,9 @@
 - Grafana running. (Not a hard requirement* but important for Integration)
 
 ## Steps:
+### Create EFS (Elastic File System) to store Grafana Data.
+- This step is exactly similar to the grafana one; please refer this [section](01_Deploying_Grafana.md#create-efs-elastic-file-system-to-store-grafana-data) for creating EFS.
+
 ### Create/Modify ECS task IAM role so that Loki in ECS can use S3 bucket.
 - Go to IAM -> select roles -> Search for ***ecsTaskExecutionRole*** -> Select that role -> Under **Permission Policies** select ***Add permissions*** -> Hit ***Create Inline Policy***
 
@@ -166,6 +169,8 @@
 - In the form add appropriate information. Name -> Task Role -> In network mode select Bridge Mode -> Task Execution Role (use default role or create a new IAM role and use that; but make sure if you are using new IAM role select Configure task and container definitions as use case under Elastic Container Service)
 
     ![](__assets__/21.png)
+
+    Scroll all the way down and select ***Add Volume*** under Volumes section -> Give appropriate name for the volume mount -> Select ***EFS*** as volume type -> Select EFS that we created earlier in the ***File System ID*** -> Mention Root Directory -> Click ***Add***
 
 - After this scroll down and under Container Definitions select Add Container -> A new form will appear -> here give appropriate Container name -> Add docker image name -> in Memory Limits select Soft limit and set memory accordingly for this demo we will set it as 2048 which is 2GiB -> Under port mappings put ***3100*** as Container Port as it is the default port of loki and either put specific port number as Host Port if you are using EC2 instances with Public IP and NOT utilizing ALB but we will be attaching it to ALB so we will set it to 0 which will set the host port dynamically -> 
 
